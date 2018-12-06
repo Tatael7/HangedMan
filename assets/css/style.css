@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/jig.jpg");
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width:100%;
+    
+}
+
+#picAre {
+    border: 5px solid chartreuse;
+    height: 400px;
+   
+
+}
+
+#used {
+    border: orange 5px solid;
+    height: 80px;
+    color: whitesmoke;
+    
+}
+#answer {
+    color: whitesmoke;
+}

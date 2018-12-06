@@ -12,18 +12,47 @@
     </head>
     <body >
         <header>
-            <h1 class="col-md-12" id="h1">I want to play a game <i class="fa fa-puzzle-piece" style="font-size:48px;color:red"></i></h1>  
+            <h1 class="col-sm-12" id="h1">I want to play a game <i class="fa fa-puzzle-piece" style="font-size:48px;color:red"></i></h1>  
         </header>
         <hr>
         <div class="container">
-         <div class="row">
-            <div class="col-sm-4">
-                <p>The game is simple, you're trying to save the life of this poor sap by guessing the words.</p>
-                <p>Press any key to start guessing letters, you get a total of 9 guesses before our dear prisoner meets his maker.</p>
-                <p>Your failed guesses will be complied in the "No Bueno" box and your correct guesses will appear on the lines
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>The game is simple, you're trying to save the life of this poor sap by guessing the words.</p>
+                    <p>Press any key to start guessing letters, you get a total of 9 guesses before our dear prisoner meets his maker.</p>
+                    <p>Your failed guesses will be complied in the "No Bueno" box and your correct guesses will appear on the lines
                     that are on the right side of the screen, these lines indicate the number of letters in a word. </p>
+                </div>
+            
+                <div class="col-sm-6" id="picAre">
+                   <img src="" alt="">
+                   <div>the part with the picture</div> <!--in this big ass area i want a picture of -->
+                   <div id="answer"></div>
+                </div>
+                <div class="col-sm-2">
+                    <h2>Score</h2>
+                    <ul>
+                        <li>Wins:</li>
+                        <li id="wins"></li>
+                        <li>Losses:</li>
+                        <li id="losses"></li>
+                        <li>Lives:</li>
+                        <li id="lives"></li>
+                    </ol>
+                </div>
             </div>
-         </div>
+            <div class="row">
+                <div class="col-sm-3" id="used">
+                    <div>The used leters go in here.</div>
+                </div>
+            </div>
         </div>
+       <script>
+            start();
+            game()
+       </script>
     </body>
+    <footer class="footer">
+        @Copyright 2018 Armando Ochoa
+    </footer>
 </html>
