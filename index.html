@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <script type="text/javascript" src="assets/javascript/game2.js"></script>
    
     </head>
     <body >
@@ -18,38 +18,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <p>The game is simple, you're trying to save the life of this poor sap by guessing the words.</p>
+                    <p>The game is simple, you're trying to save the life of this poor sap by guessing the letters.</p>
                     <p>Press any key to start guessing letters, you get a total of 9 guesses before our dear prisoner meets his maker.</p>
-                    <p>Your failed guesses will be complied in the "No Bueno" box and your correct guesses will appear on the lines
-                    that are on the right side of the screen, these lines indicate the number of letters in a word. </p>
+                    <p>Your already used letters will appear in the "Used" box.</p>
                 </div>
             
                 <div class="col-sm-6" id="picAre">
-                   <img src="" alt="">
-                   <div>the part with the picture</div> <!--in this big ass area i want a picture of -->
+                   <img id="zoltar" src="assets/images/zoltar.jpg" alt="A picture of zoltar">
                    <div id="answer"></div>
                 </div>
                 <div class="col-sm-2">
                     <h2>Score</h2>
                     <ul>
                         <li>Wins:</li>
-                        <li id="wins"></li>
+                        <li id="wins">0</li>
                         <li>Losses:</li>
-                        <li id="losses"></li>
+                        <li id="losses">0</li>
                         <li>Lives:</li>
-                        <li id="lives"></li>
+                        <li id="lives">0</li>
                     </ol>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3" id="used">
-                    <div>The used leters go in here.</div>
+                <div class="col-sm-3">
+                    <h3>Used Letters</h3>
+                    <div id="used"></div>
                 </div>
             </div>
         </div>
        <script>
-            start();
-            game()
+          start();
+          letsPlay();
+            
        </script>
     </body>
     <footer class="footer">

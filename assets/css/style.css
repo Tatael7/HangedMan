@@ -29,3 +29,11 @@ body {
 #answer {
     color: whitesmoke;
 }
+
+#zoltar {
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: 5px;
+    left: 25px;
+}
